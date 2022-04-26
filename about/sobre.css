@@ -9,3 +9,11 @@
  font-size: 25px;
  padding-top: 150px;
 }
+
+.col   >h1{
+    text-align: center;
+}
+
+.col   >h4{
+    text-align: center;
+}
