@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+.subs{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer{
+    margin-top: 70px;
+}
+
+button:hover{
+    color:  rgb(125, 79, 39);
+}
