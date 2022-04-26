@@ -1,3 +1,9 @@
-.card-img-top {
- height: 1000%;
+#card {
+    display: flex;
+    text-align: center;
+
+}
+
+.clearfix > p {
+ text-align: center;
 }
