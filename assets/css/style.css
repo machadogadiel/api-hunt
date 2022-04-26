@@ -12,10 +12,31 @@ body {
     font-family: ubuntu;
     src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf);
   }
+
+  
   
 .navbar-brand{
   font-family: major mono, monospace;
 }*/
+  a:hover {
+    margin: 1px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #7ED957;
+    -moz-text-decoration-color: #7ED957;
+  }
+
+  .btn-outline-info {
+    color: #7ED957;
+    border-color: #7ED957;
+    outline-color: #7ED957;
+  }
+  
+  .btn-outline-info:hover {
+    outline-color: #7ED957;
+    border-color: #7ED957;
+    background-color: #7ED957;
+  }
 
   .carousel {
     margin-bottom: 4rem;
