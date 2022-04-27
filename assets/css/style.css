@@ -68,7 +68,7 @@
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 600px;
+    height: 450px;
   }
   .carousel-item > img {
     position: absolute;
@@ -86,7 +86,7 @@
     top: 0;
     background-position: center;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.5;
     
   }
   
