@@ -8,6 +8,7 @@
  text-align: center;
  font-size: 25px;
  padding-top: 150px;
+ color: #c4c1be;
 }
 
 .clearfix > img {
@@ -26,7 +27,10 @@
 
 .col   >p{
     text-align: center;
-    
+    color: #c4c1be;
+  
 }
+
+
 
 
