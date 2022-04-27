@@ -1,41 +1,60 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');  
+  
+  body {
     color: #5a5a5a;
     background-color: black;
-  }
-/* 
-  @font-face {
-    font-family: major mono;
-    src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf);
+    font-family: 'Inter', sans-serif;
   }
 
-  @font-face {
-    font-family: ubuntu;
-    src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf);
+  .text-main {
+    color: #b6b6b6 !important;
   }
 
-  
-  
-.navbar-brand{
-  font-family: major mono, monospace;
-}*/
+  .underline {
+    font-weight: 600;
+    color: #c4c4c4 !important;
+  }
+
   a:hover {
+    color: #fff !important;
+
     margin: 1px;
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: #7ED957;
-    -moz-text-decoration-color: #7ED957;
+    text-decoration-color: var(--green-gay);
+    -moz-text-decoration-color: var(--green-gay);
+  }
+  
+  .bg-green {
+    background-color: #3333335e;
+  }
+
+  .pequenininho {
+    font-size: large;
+  }
+
+  .fw-30 {
+    font-weight: 300;
+  }
+
+  .text-green {
+    color: var(--green-gay);
   }
 
   .btn-outline-info {
-    color: #7ED957;
-    border-color: #7ED957;
-    outline-color: #7ED957;
+    color: var(--green-gay);
+    border-color: var(--green-gay);
+    outline-color: var(--green-gay);
   }
   
   .btn-outline-info:hover {
-    outline-color: #7ED957;
-    border-color: #7ED957;
-    background-color: #7ED957;
+    outline-color: var(--green-gay);
+    border-color: var(--green-gay);
+    background-color: var(--green-gay);
+  }
+
+  .btn:focus, .btn:active {
+    outline-color: var(--green-gay);
   }
 
   .carousel {
@@ -49,7 +68,7 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 400px;
+    height: 600px;
   }
   .carousel-item > img {
     position: absolute;
@@ -68,7 +87,7 @@ body {
     background-position: center;
     background-size: cover;
     opacity: 0.3;
-  
+    
   }
   
   /* Center align the text within the three columns below the carousel */
@@ -118,7 +137,7 @@ body {
       font-size: 1.25rem;
       line-height: 1.4;
     }
-  
+    
     .featurette-heading {
       font-size: 50px;
     }
@@ -130,3 +149,23 @@ body {
     }
   }
   
+
+  :root {
+    --green-gay: #7ED957;
+  }
+  /* 
+    @font-face {
+      font-family: major mono;
+      src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf);
+    }
+  
+    @font-face {
+      font-family: ubuntu;
+      src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf);
+    }
+  
+    
+    
+  .navbar-brand{
+    font-family: major mono, monospace;
+  }*/
