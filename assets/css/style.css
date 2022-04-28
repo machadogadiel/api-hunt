@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');  
   
   body {
-    color: #5a5a5a;
-    background-color: black;
+    background-color: #000000;
     font-family: 'Inter', sans-serif;
   }
 
+  .api-hunt-title {
+    font-weight: 800;
+  }
+
   .text-main {
-    color: #b6b6b6 !important;
+    color: #b6b6b6;
   }
 
   .underline {
     font-weight: 600;
-    color: #c4c4c4 !important;
+    color: #c4c4c4;
   }
 
-  a:hover {
-    color: #fff !important;
+  .underline:hover {
+    color: #fff;
 
     margin: 1px;
     text-decoration: underline;
@@ -25,6 +28,10 @@
     -moz-text-decoration-color: var(--green-gay);
   }
   
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(126, 217, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }  
+
   .bg-green {
     background-color: #3333335e;
   }
@@ -53,9 +60,6 @@
     background-color: var(--green-gay);
   }
 
-  .btn:focus, .btn:active {
-    outline-color: var(--green-gay);
-  }
 
   .carousel {
     margin-bottom: 4rem;
@@ -70,6 +74,7 @@
   .carousel-item {
     height: 450px;
   }
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -151,21 +156,5 @@
   
 
   :root {
-    --green-gay: #7ED957;
-  }
-  /* 
-    @font-face {
-      font-family: major mono;
-      src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf);
-    }
-  
-    @font-face {
-      font-family: ubuntu;
-      src: url(/assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf);
-    }
-  
-    
-    
-  .navbar-brand{
-    font-family: major mono, monospace;
-  }*/
+    --green-gay: #7ed957;
+}
