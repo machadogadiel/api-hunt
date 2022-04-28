@@ -1,0 +1,35 @@
+#card {
+    display: flex;
+    text-align: center;
+
+}
+
+.clearfix > p {
+ text-align: center;
+ font-size: 25px;
+ padding-top: 150px;
+ color: #c4c1be;
+}
+
+.clearfix > img {
+    max-width: 400px
+}
+
+.col   >h1{
+    text-align: center;
+    color: #7fda56;
+}
+
+.col   >h4{
+    text-align: center;
+    color: #7fda56;
+}
+
+.col   >p{
+    text-align: center;
+    color: #c4c1be;
+  
+}
+
+
+
