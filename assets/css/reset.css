@@ -1,8 +1,12 @@
-#body{
-margin: 0;
-padding: 0;
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+*, :after, :before {
+    box-sizing: border-box;
+}
 
 /* --jet: #343434ff;
 --cadet-blue: #729ea1ff;
