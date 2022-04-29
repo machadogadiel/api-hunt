@@ -10,6 +10,13 @@ label {
     border-radius: 5px;
 }
 
+.api-hunt-wrong-input {
+    color: #dfdfdf;
+    background-color: #0c0c0c;
+    border-color: #ce0000;
+    border-radius: 5px;
+}
+
 .api-hunt-input:focus {
     color: white;
     border-width: 2px;

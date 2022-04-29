@@ -26,7 +26,7 @@ class UserModel {
         }
     }
 
-    getUsers() {
+    getUsersList() {
         return this.users
     }
 }

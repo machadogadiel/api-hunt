@@ -13,10 +13,13 @@ const inputPwConfirm = $("#input-pw-confirm")
 
 const userModel = new UserModel()
 const userController = new UserController()
+const userView = new UserView()
 
 initListeners()
 
 function initListeners() {
+    // click events
+
     signInButton.click(function() {
         location.href = "../../assets/html/sign-in.html"
     })
@@ -29,8 +32,44 @@ function initListeners() {
         event.preventDefault()
 
         userController.createUserFromInput(userModel)
-        console.log(userModel.getUsers())
+        console.log(userModel.getUsersList())
     })
+
+    // blur events
+
+    inputCpf.blur(function() {
+        const cpfValue = inputCpf.val()
+        
+        if (userController.isValidCpf(cpfValue)) {
+            userController.setAddressFromCep(cpfValue)
+        } else {
+            userView.showErrorStyle(inputCpf)
+        }
+    })
+
+    inputPwConfirm.blur(function() {
+        const passwordValue = inputPassword.val()
+        
+        if (userController.isValidPassword(inputPassword, inputPwConfirm)) {
+            userController.setAddressFromCep(passwordValue)
+        } else {
+            userView.showErrorStyle(inputPassword)
+            userView.showErrorStyle(inputPwConfirm)
+        }
+    })
+
+    inputCep.blur(function() {
+        const cepValue = inputCep.val()
+        
+        if (userController.isValidCep(cepValue) && cepValue != null) {
+            userController.setAddressFromCep(cepValue)
+        } else {
+            userView.showErrorStyle(inputCep)
+        }
+    })
+
+
+    // keyup events
 
     inputCep.keyup(function() {
         let cepValue = inputCep.val()
