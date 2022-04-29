@@ -1,10 +1,66 @@
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');  
+  
+  body {
+    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .api-hunt-title {
+    font-weight: 800;
+  }
+
+  .text-main {
+    color: #b6b6b6;
+  }
+
+  .underline {
+    font-weight: 600;
+    color: #c4c4c4;
+  }
+
+  .underline:hover {
+    color: #fff;
+
+    margin: 1px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--green-gay);
+    -moz-text-decoration-color: var(--green-gay);
   }
   
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(126, 217, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }  
+
+  .bg-green {
+    background-color: #3333335e;
+  }
+
+  .pequenininho {
+    font-size: large;
+  }
+
+  .fw-30 {
+    font-weight: 300;
+  }
+
+  .text-green {
+    color: var(--green-gay);
+  }
+
+  .btn-outline-info {
+    color: var(--green-gay);
+    border-color: var(--green-gay);
+    outline-color: var(--green-gay);
+  }
+  
+  .btn-outline-info:hover {
+    outline-color: var(--green-gay);
+    border-color: var(--green-gay);
+    background-color: var(--green-gay);
+  }
+
+
   .carousel {
     margin-bottom: 4rem;
   }
@@ -16,8 +72,9 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 400px;
+    height: 450px;
   }
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -34,8 +91,8 @@ body {
     top: 0;
     background-position: center;
     background-size: cover;
-    opacity: 0.3;
-  
+    opacity: 0.5;
+    
   }
   
   /* Center align the text within the three columns below the carousel */
@@ -85,7 +142,7 @@ body {
       font-size: 1.25rem;
       line-height: 1.4;
     }
-  
+    
     .featurette-heading {
       font-size: 50px;
     }
@@ -97,3 +154,7 @@ body {
     }
   }
   
+
+  :root {
+    --green-gay: #7ed957;
+}
