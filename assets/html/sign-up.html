@@ -2,130 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../css/sign-style.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style-input.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
 
-    <title>Title</title>
+  <title>Title</title>
 </head>
 
 <body>
+  <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <img class="my-1" src="../img/logo.png" alt="" height="50" width="50" />
-  
-          <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
-            <ul class="navbar-nav mt-2 mt-lg-0">
-              <li class="nav-item"><a class="underline nav-link text-main" href="../../index.html">HOME</a></li>
-              <li class="nav-item"><a class="underline nav-link text-main" href="#">PLANS</a></li>
-              <li class="nav-item"><a class="underline nav-link text-main" href="#">ABOUT US</a>
-              </li>
-            </ul>
+      <div class="container">
+        <img class="my-1" src="../img/logo.png" alt="" height="50" width="50" />
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="underline nav-link text-main" href="../../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline nav-link text-main" href="../html/plans.html">PLANS</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline nav-link text-main" href="../html/about.html">ABOUT US</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn btn-outline-info mx-1" id="sign-in-button">
+          Sign in
+        </button>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-5" style="height: 500px; width: 500px">
+      <h1 class="text-green text-center api-hunt-title mb-5">Sign up</h1>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="inputAddress">Nome:</label>
+            <input type="text" class="form-control api-hunt-input" id="input-name" placeholder="Name" />
           </div>
-  
-          <div class="">
-            <button class="btn btn-outline-info mx-1" id="sign-in-button">Sign in</button>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-              data-target="#navbarToggler">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">CPF:</label>
+            <input type="email" class="form-control api-hunt-input" id="input-email" placeholder="CPF" />
           </div>
         </div>
-      </nav>
-    </header>
 
-    <main>
-        <div class="container mt-5" style="height: 500px; width: 500px;">
-            <h1 class="text-green text-center api-hunt-title mb-5">Sign up</h1>
-
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-8">
-                        <label for="inputAddress">Nome:</label>
-                        <input type="text" class="form-control api-hunt-input" id="input-name" placeholder="Name">
-                    </div>
-    
-                    <div class="form-group col-md-4">
-                        <label for="inputEmail4">CPF:</label>
-                        <input type="email" class="form-control api-hunt-input" id="input-email" placeholder="CPF">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="inputEmail4">Email:</label>
-                    <input type="email" class="form-control api-hunt-input" id="input-email" placeholder="Email">
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword1">Password:</label>
-                        <input type="password" class="form-control api-hunt-input" id="input-pw"
-                            placeholder="Password">
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword2">Confirm Password:</label>
-                        <input type="password" class="form-control api-hunt-input" id="input-pw-confirm"
-                            placeholder="Password">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-5">
-                        <label for="inputCity">City:</label>
-                        <input type="text" class="form-control api-hunt-input" id="input-city" placeholder="City">
-                    </div>
-
-                    <div class="form-group col-md-2">
-                        <label for="input-state">State:</label>
-
-                        <select id="input-state" class="form-control api-hunt-input">
-                            <option selected>...</option>
-                            <option>1</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group col-md-5">
-                        <label for="input-cep">CEP:</label>
-                        <input type="text" class="form-control api-hunt-input" id="inputZip" placeholder="CEP">
-                    </div>
-
-                </div>
-
-                <div class="form-group">
-                    <label for="inputAddress">Street:</label>
-                    <input type="text" class="form-control api-hunt-input" id="input-address" placeholder="1234 Main St">
-                </div>
-
-                <div class="form-group">
-    
-                    <div class="form-check">
-                        <input class="form-check-input api-hunt-input" type="checkbox" id="gridCheck">
-    
-                        <label class="form-check-label text-main" for="gridCheck">I agree with the terms of service</label>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-outline-info" id="sign-up-button">Create account</button>
-                </div>
-            </form>
+        <div class="form-group">
+          <label for="inputEmail4">Email:</label>
+          <input type="email" class="form-control api-hunt-input" id="input-email" placeholder="Email" />
         </div>
-    </main>
 
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputPassword1">Password:</label>
+            <input type="password" class="form-control api-hunt-input" id="input-pw" placeholder="Password" />
+          </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
+          <div class="form-group col-md-6">
+            <label for="inputPassword2">Confirm Password:</label>
+            <input type="password" class="form-control api-hunt-input" id="input-pw-confirm" placeholder="Password" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label for="inputCity">City:</label>
+            <input type="text" class="form-control api-hunt-input" id="input-city" placeholder="City" />
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="input-state">State:</label>
+
+            <select id="input-state" class="form-control api-hunt-input">
+              <option selected>...</option>
+              <option>1</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-5">
+            <label for="input-cep">CEP:</label>
+            <input type="text" class="form-control api-hunt-input" id="inputZip" placeholder="CEP" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputAddress">Street:</label>
+          <input type="text" class="form-control api-hunt-input" id="input-address" placeholder="1234 Main St" />
+        </div>
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input api-hunt-input" type="checkbox" id="gridCheck" />
+
+            <label class="form-check-label text-main" for="gridCheck">I agree with the terms of
+              service</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-info" id="sign-up-button">
+            Create account
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
-
-
 
 </html>

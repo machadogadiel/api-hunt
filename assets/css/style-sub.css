@@ -2,18 +2,19 @@ body{
     background-color: black;
 }
 
-.subs{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+.li-api-hunt {
+    color: white;
+    background-color: #0c0c0c;
+}
+
+.card-api-hunt {
+    color: white;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: #0c0c0c;
+    border-color: #7ED957;
 }
 
 footer{
     margin-top: 70px;
-}
-
-button:hover{
-    color:  rgb(125, 79, 39);
 }

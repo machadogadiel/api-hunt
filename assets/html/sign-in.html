@@ -2,75 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../css/sign-style.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/style-input.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
 
-    <title>Title</title>
+  <title>Title</title>
 </head>
 
 <body>
+  <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <img class="my-1" src="../img/logo.png" alt="" height="50" width="50" />
-  
-          <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
-            <ul class="navbar-nav mt-2 mt-lg-0">
-              <li class="nav-item"><a class="underline nav-link text-main" href="../../index.html">HOME</a></li>
-              <li class="nav-item"><a class="underline nav-link text-main" href="#">PLANS</a></li>
-              <li class="nav-item"><a class="underline nav-link text-main" href="#">ABOUT US</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="">
-            <button class="btn btn-outline-info mx-1" id="sign-in-button">Sign in</button>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-              data-target="#navbarToggler">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+      <div class="container">
+        <img class="my-1" src="../img/logo.png" alt="" height="50" width="50" />
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="underline nav-link text-main" href="../../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline nav-link text-main" href="../html/plans.html">PLANS</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline nav-link text-main" href="../html/about.html">ABOUT US</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
 
-    <main>
-        <div class="container mt-5" style="height: 500px; width: 400px;">
-            <h1 class="text-green text-center api-hunt-title mb-5">Sign In</h1>
+        <button class="btn btn-outline-info mx-1" id="sign-in-button">
+          Sign in
+        </button>
 
-            <form>
-                <div class="form-group">
-                    <label for="inputEmail4">Email:</label>
-                    <input type="email" class="form-control api-hunt-input" id="input-email" placeholder="Email">
-                </div>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-                <div class="form-group">
-                    <label for="inputPassword1">Password:</label>
-                    <input type="password" class="form-control api-hunt-input" id="input-pw" placeholder="Password">
-                </div>
+  <main>
+    <div class="container mt-5" style="height: 500px; width: 400px;">
+      <h1 class="text-green text-center api-hunt-title mb-5">Sign In</h1>
 
-                <div class="text-center">
-                    <button type="submit" class="btn btn-outline-info mb-3" id="sign-up-button">Sign In</button>
-
-                    <a href="../html/pw-recovery.html" class="text-decoration-none"><p class="text-main">Forgot your password?</p></a>
-                    <a href="../html/sign-up.html" class="text-decoration-none"><p class="text-main">Don't have an account yet?</p></a>
-                </div>
-            </form>
+      <form>
+        <div class="form-group">
+          <label for="inputEmail4">Email:</label>
+          <input type="email" class="form-control api-hunt-input" id="input-email" placeholder="Email">
         </div>
-    </main>
+
+        <div class="form-group">
+          <label for="inputPassword1">Password:</label>
+          <input type="password" class="form-control api-hunt-input" id="input-pw" placeholder="Password">
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-info mb-3" id="sign-up-button">Sign In</button>
+
+          <a href="../html/pw-recovery.html" class="text-decoration-none">
+            <p class="text-main">Forgot your password?</p>
+          </a>
+          <a href="../html/sign-up.html" class="text-decoration-none">
+            <p class="text-main">Don't have an account yet?</p>
+          </a>
+        </div>
+      </form>
+    </div>
+  </main>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 
