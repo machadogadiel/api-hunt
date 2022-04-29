@@ -6,11 +6,11 @@ initListeners()
 
 function initListeners() {
     signInButton.click(function() {
-        location.href = "https://machadogadiel.github.io/assets/html/sign-in.html"
+        location.href = "../../assets/html/sign-in.html"
     })
     
     waitListButton.click(function() {
-        location.href = "https://machadogadiel.github.io/assets/html/sign-up.html"
+        location.href = "../../assets/html/sign-up.html"
     })
 
     signUpButton.click(function(event) {
